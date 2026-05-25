@@ -1,0 +1,345 @@
+
+#PhoneHeader {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.phoneslide {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0;
+  margin:0;
+}
+
+.phoneslide.active {
+  opacity: 1;
+}
+
+.slide-content {
+  background: rgba(0,0,0,0.4); /* semi-transparent overlay */
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.slide-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.slide-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.slide-content button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.slide-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Arrows */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.card_phone{
+  background-color: white;
+height: 500px;
+width: 300px;
+margin: 30px;
+border-radius: 20px;
+}
+img{
+  height: 200px;
+  width: 200px;
+  margin: 50px;
+}
+
+.addcart_phone{
+ 
+/* From Uiverse.io by elijahgummer */ 
+  font: inherit;
+  background-color: blue;
+  border: 0;
+  color: white;
+  border-radius: 0.5em;
+  font-size: 1.35rem;
+  padding: 0.375em 1em;
+  justify-self: right;
+  margin-left: 110px;
+  margin-top: -15px;
+  font-weight: 600;
+  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+.addcart_phone:active {
+  translate: 0 0.225em;
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
+
+
+
+h1{
+  margin-left: 40px;
+}
+span{
+  color: grey;
+}
+p ,b{
+  margin-left: 20px;
+}
+.cart-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cart-icon svg{
+  color: black;
+}
+/* hover effect */
+.cart-icon:hover {
+  background-color: blue;
+  transform: scale(1.1);
+}
+
+/* change icon color on hover */
+.cart-icon:hover svg {
+  color: white;
+}
+.Phone_Header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5px;
+}
+.phone-details{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.phone-details-content{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+
+    animation: zoomIn 0.3s ease;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-details-content img{
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@keyframes zoomIn{
+    from{
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #000;
+
+}
+
+.rose {
+  background: papayawhip;
+}
+
+.black {
+  background: black;
+}
+
+.blue {
+  background: blue;
+}
+.orange{
+  background-color: orange;
+}
+.navyblue{
+  background-color: navy;
+}
+.babyblue{
+  background-color: rgba(81, 182, 244, 0.4);
+}
+.green{
+  background-color: rgba(123, 250, 95, 0.521);
+}
+.yellow{
+ background-color: rgb(230, 230, 11);
+}
+.grey{
+background-color:  rgba(168, 168, 168, 1);
+}
+.violet{
+  background-color: rgba(201, 176, 234, 1);
+}
+#addcart_phone{
+  font: inherit;
+  background-color: blue;
+  border: 0;
+  color: white;
+  border-radius: 0.5em;
+  font-size: 1.35rem;
+  padding: 0.375em 1em;
+  justify-self: right;
+  margin-left: 10px;
+  margin-top: -15px;
+  font-weight: 600;
+  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+#addcart_phone:active {
+  translate: 0 0.225em;
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
+.toast{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: rgba(20,20,20,0.95);
+  color: white;
+  padding: 16px 24px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 9999;
+
+  animation: slideIn 0.4s ease,
+             fadeOut 0.4s ease 2.1s forwards;
+
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+}
+
+.toast-icon{
+  color: lime;
+  font-size: 22px;
+}
+
+@keyframes slideIn{
+  from{
+    transform: translateX(120%);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut{
+  to{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}

@@ -1,0 +1,120 @@
+/*ALL'S DONE*/
+body{
+background-image: url("image.4.jpeg");
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+        
+}
+
+h3{
+    text-align: center;
+    font-size: 40px;
+    padding-top:0px;
+}
+hr{
+    background-color: white;
+    width: 100%;
+}
+p{
+    text-align: left;
+}
+#emaill{
+    text-align: center;
+    width: 35%;
+    transition: width 0.3s ease;
+    border-radius: 30px;
+}
+#pass{
+    text-align: center;
+    width: 35%;
+    transition: width 0.3s ease;
+    border-radius: 30px;
+}
+#emaill:focus,#pass:focus,#emaill2:focus,#pass2:focus,#name2:focus,#pass3:focus{
+    width:100%;
+}
+
+.second{
+    border: solid;
+    justify-self: center;
+    border-radius: 40px;
+    height: 25%;
+   width: 25%;
+    margin-top: 5vh;
+    padding:2rem;
+    transition: all 2s ease;
+    box-shadow: 5px 5px 50px 50px blueviolet;
+
+}
+.second:hover{
+    border-color: blueviolet;
+    box-shadow: 10px 10px 60px 60px blueviolet;
+    transform: scale(1.1);
+}
+#butt{
+    height: 7vh;
+    background-color: purple;
+    border-radius: 40px;
+    color: white;
+    font-size: large;
+    margin-top: 5vw;
+    width: 100%;
+}
+#butt a{
+  text-decoration: none;
+    color: white;
+}
+#span{
+    color: purple;
+    background: none;
+    border: transparent;
+}
+#span:hover{
+    text-decoration:underline;
+}
+.textt,.textt2,.namee,.textt3{
+    color: white;
+}
+.second.active{
+opacity: 0.3;
+transform: translateX(-80%);
+}
+.third.active{
+  opacity: 1;
+transform:translate(75%,-100%) ;
+}
+#emaill2{
+    text-align: center;
+    width: 35%;
+    transition: width 0.3s ease;
+    border-radius: 30px;
+    margin-bottom: -5vh;
+}
+#pass2 ,#name2,#pass3{
+    text-align: center;
+    width: 35%;
+    transition: width 0.3s ease;
+    border-radius: 30px;
+    margin-bottom: -5vh;
+}
+.third{
+    justify-self:center ;
+    border: solid;
+    border-radius: 40px;
+    height: 100%;
+    width: 20%;
+margin: 5vh 8vw 0vh 30vw;
+    padding:2rem;
+    transition: transform 2s ease-in-out;
+    box-shadow: 5px 5px 50px 50px blueviolet;
+    opacity: 0;
+}
+#butt2{
+    height: 7vh;
+    background-color: purple;
+    border-radius: 40px;
+    color: white;
+    font-size: large;
+    margin-top: 5vh;
+    width: 100%;
+}
