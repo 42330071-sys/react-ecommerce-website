@@ -43,19 +43,19 @@ npm start
 ##  Screenshots
 
 ### Home Page
-![Home Page](./screenshots/Screenshot_25-5-2026_141135_localhost.jpeg)
+![Home Page](./screenshots%20UI/Screenshot_25-5-2026_141135_localhost.jpeg)
 
 ### Phones Page
-![Phones Page](./screenshots/Screenshot_25-5-2026_141538_localhost.jpeg)
+![Phones Page](./screenshots%20UI/Screenshot_25-5-2026_141538_localhost.jpeg)
 
 ### Cart Page
-![Cart Page](./screenshots/Screenshot_25-5-2026_141616_localhost.jpeg)
+![Cart Page](./screenshots%20UI/Screenshot_25-5-2026_141616_localhost.jpeg)
 
 ### Laptops Page
-![Laptops Page](./screenshots/Screenshot_25-5-2026_141253_localhost.jpeg)
+![Laptops Page](./screenshots%20UI/Screenshot_25-5-2026_141253_localhost.jpeg)
 
 ### Accessories Page
-![Accessories Page](./screenshots/Screenshot_25-5-2026_141553_localhost.jpeg)
+![Accessories Page](./screenshots%20UI/Screenshot_25-5-2026_141553_localhost.jpeg)
 
 ### Login Page
-![Login Page](./screenshots/Screenshot_25-5-2026_141239_localhost.jpeg)
+![Login Page](./screenshots%20UI/Screenshot_25-5-2026_141239_localhost.jpeg)
