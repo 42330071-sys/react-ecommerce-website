@@ -244,7 +244,7 @@ const addToCart = (laptop) => {
           <div className="laptop-details">
             <div className="laptop-details-content">
         
-               <img
+              <img
                src={selectedLaptop.image}
           alt={selectedLaptop.name}
         />
