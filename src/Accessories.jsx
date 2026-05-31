@@ -91,7 +91,7 @@ const addToCart = (item) => {
               className={`accessorieslide ${index === currentSlide ? "active" : ""}`}
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="slide-content3">
+            <div className="slide-content3">
                 <h2>{slide.title}</h2>
                 <p>{slide.description}</p>
                 <a href="#cards_accessories">
