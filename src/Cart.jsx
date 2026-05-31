@@ -46,7 +46,7 @@ const removeItem = (id, selectedImage) => {
       )
   );
 
-  setCart(updatedCart);
+ setCart(updatedCart);
 
   localStorage.setItem("cart", JSON.stringify(updatedCart));
 };
