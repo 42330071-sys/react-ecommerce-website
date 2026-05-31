@@ -43,7 +43,7 @@ const moveback = () => {
           Email:
           <i
             className="fa fa-envelope"
-            style={{ fontSize: "16px", marginLeft: "5px" }}
+            style={{ fontSize: "16px", marginLeft: "6px" }}
           ></i>
         </p>
 
