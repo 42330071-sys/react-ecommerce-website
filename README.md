@@ -40,7 +40,7 @@ To run this project locally:
 npm install
 npm start
 
-##  Screenshots
+## 📸 Screenshots
 
 ### Home Page
 ![Home Page](./screenshots-ui/Screenshot_25-5-2026_141135_localhost.jpeg)
