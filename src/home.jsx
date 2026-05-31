@@ -114,7 +114,7 @@ const handleClick = () => {
 
           <p>
             Welcome to <strong>Rammal Store</strong>, your trusted online computer shop.
-            We provide high-quality laptops, desktop computers, gaming PCs, and accessories
+            We provide high-quality laptops, desktop computers, gaming PCs, phones and accessories
             at competitive prices.
           </p>
 
