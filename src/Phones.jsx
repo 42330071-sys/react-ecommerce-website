@@ -297,7 +297,7 @@ return (
       </button>
       <h2>{selectedPhone.name}</h2>
 
-      <p>- Storage Option:256GB</p>
+      <p>-Storage Option:256GB</p>
       <p>-Resolution:2556x1179</p>
       <p>-RAM:8GB</p>
 
