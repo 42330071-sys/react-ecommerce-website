@@ -135,84 +135,127 @@ height: 550px;
 #span2:hover{
     text-decoration: underline;
 }
-/* ================= MOBILE ================= */
+/* ===== MOBILE FIX - ONLY CHANGE SIZES, NOTHING ELSE ===== */
+@media (max-width: 768px) {
+  
+  /* Background */
+  .Loginbody {
+    background-size: 100% 30%;
+    overflow-x: hidden;
+  }
 
-@media screen and (max-width: 768px) {
+  /* Title */
+  h3 {
+    font-size: 28px !important;
+  }
 
-.Loginbody{
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-y: auto;
-    padding: 20px;
-}
+  /* SECOND CARD (Login) - only width and padding */
+  .second {
+    width: 90% !important;
+    height: auto !important;
+    padding: 1.5rem !important;
+    margin-top: 20px !important;
+    transform: none !important; /* ma yt7rk */
+  }
 
-.second{
-    width: 90%;
-    max-width: 400px;
-    margin: auto;
-    padding: 25px;
+  /* THIRD CARD (Register) - only width and padding */
+  .third {
+    width: 90% !important;
+    height: auto !important;
+    margin: 20px auto !important;
+    padding: 1.5rem !important;
+    opacity: 1 !important;
+    transform: none !important; /* ma yt7rk */
+  }
+
+  /* Remove hover effect on mobile */
+  .second:hover {
     transform: none !important;
-}
+    box-shadow: 5px 5px 50px 50px blueviolet !important;
+  }
 
-.third{
-    width: 90%;
-    max-width: 400px;
-    margin: auto;
-    min-height: 550px;
-    height: auto;
+  /* Remove active transforms */
+  .second.active {
     transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .third.active {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  /* Inputs - full width on mobile */
+  #emaill,
+  #pass,
+  #emaill2,
+  #pass2,
+  #name2,
+  #pass3 {
+    width: 100% !important;
+    font-size: 16px !important;
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Buttons */
+  #butt,
+  #butt2 {
+    height: 50px !important;
+    font-size: 16px !important;
+    margin-top: 20px !important;
+  }
+
+  /* hr */
+  hr {
+    width: 100% !important;
+  }
+
+  /* Text */
+  p,
+  .textt,
+  .textt2,
+  .namee,
+  .textt3 {
+    font-size: 14px !important;
+    text-align: center !important;
+  }
+
+  /* Span links */
+  #span,
+  #span2 {
+    font-size: 14px !important;
+  }
+
+  /* Box shadow smaller on mobile */
+  .second,
+  .third {
+    box-shadow: 5px 5px 30px 30px blueviolet !important;
+  }
+
+  /* Textt2 flex wrap */
+  .textt2 {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    white-space: normal !important;
+  }
 }
 
-.second.active{
-    opacity: 0;
-}
+/* ===== VERY SMALL PHONES (under 400px) ===== */
+@media (max-width: 400px) {
+  .second,
+  .third {
+    width: 95% !important;
+    padding: 1rem !important;
+  }
 
-.third.active{
-    opacity: 1;
-}
+  h3 {
+    font-size: 22px !important;
+  }
 
-h3{
-    font-size: 30px;
-}
-
-.textt,
-.textt2,
-.textt3,
-.namee{
-    font-size: 16px;
-}
-
-#emaill,
-#pass,
-#emaill2,
-#pass2,
-#pass3,
-#name2{
-    width: 100%;
-}
-
-#emaill:focus,
-#pass:focus,
-#emaill2:focus,
-#pass2:focus,
-#pass3:focus,
-#name2:focus{
-    width: 100%;
-}
-
-#butt,
-#butt2{
-    height: 50px;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-.second:hover{
-    transform: none;
-}
-
+  #butt,
+  #butt2 {
+    height: 44px !important;
+    font-size: 14px !important;
+  }
 }
