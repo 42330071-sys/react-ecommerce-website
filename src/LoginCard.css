@@ -138,7 +138,7 @@ height: 550px;
 /* ===== MOBILE FIX - ONLY CHANGE SIZES, NOTHING ELSE ===== */
 
 /* ===== VERY SMALL PHONES (under 400px) ===== */
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   
   /* Background */
   .Loginbody {
