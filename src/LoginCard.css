@@ -140,7 +140,11 @@ height: 550px;
   
   /* Background */
   .Loginbody {
-    background-size: 100% 30%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
     overflow-x: hidden;
   }
 
@@ -151,21 +155,25 @@ height: 550px;
 
   /* SECOND CARD (Login) - only width and padding */
   .second {
-    width: 90% !important;
+    width: 60% !important;
     height: auto !important;
     padding: 1.5rem !important;
-    margin-top: 20px !important;
-    transform: none !important; /* ma yt7rk */
+    margin: 20px auto !important;
+    position: relative;
+    z-index: 2;
+    transition: all 0.6s ease;
   }
 
   /* THIRD CARD (Register) - only width and padding */
   .third {
-    width: 90% !important;
+    width: 60% !important;
     height: auto !important;
-    margin: 20px auto !important;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
     padding: 1.5rem !important;
-    opacity: 1 !important;
-    transform: none !important; /* ma yt7rk */
+    transition: all 0.6s ease;
   }
 
   /* Remove hover effect on mobile */
@@ -176,13 +184,13 @@ height: 550px;
 
   /* Remove active transforms */
   .second.active {
-    transform: none !important;
-    opacity: 1 !important;
+    pointer-events: none;
+    opacity: 0 !important;
   }
 
   .third.active {
-    transform: none !important;
     opacity: 1 !important;
+    transform: translate(0,0);
   }
 
   /* Inputs - full width on mobile */
@@ -192,12 +200,20 @@ height: 550px;
   #pass2,
   #name2,
   #pass3 {
-    width: 100% !important;
+    width: 30% !important;
     font-size: 16px !important;
     padding: 10px !important;
     margin-bottom: 10px !important;
   }
-
+#emaill:focus,
+#pass:focus,
+#emaill2:focus,
+#pass2:focus,
+#name2:focus,
+#pass3:focus {
+  width: 100% !important;
+  transition: width 0.3s ease;
+}
   /* Buttons */
   #butt,
   #butt2 {
