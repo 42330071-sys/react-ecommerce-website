@@ -135,3 +135,84 @@ height: 550px;
 #span2:hover{
     text-decoration: underline;
 }
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 768px) {
+
+.Loginbody{
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.second{
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 25px;
+    transform: none !important;
+}
+
+.third{
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    min-height: 550px;
+    height: auto;
+    transform: none !important;
+}
+
+.second.active{
+    opacity: 0;
+}
+
+.third.active{
+    opacity: 1;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.textt,
+.textt2,
+.textt3,
+.namee{
+    font-size: 16px;
+}
+
+#emaill,
+#pass,
+#emaill2,
+#pass2,
+#pass3,
+#name2{
+    width: 100%;
+}
+
+#emaill:focus,
+#pass:focus,
+#emaill2:focus,
+#pass2:focus,
+#pass3:focus,
+#name2:focus{
+    width: 100%;
+}
+
+#butt,
+#butt2{
+    height: 50px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.second:hover{
+    transform: none;
+}
+
+}
