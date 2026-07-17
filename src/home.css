@@ -155,7 +155,6 @@ gap: 7vw;
     float: left;
     box-shadow: 0 10px 25px rgba(255, 0, 255, 0.3);
     color: #fff;
-    backdrop-filter: blur(10px);
     transition: transform 0.3s ,box-shadow 0.3s;
     background-image: url(back4.jpg);
 }
@@ -203,7 +202,6 @@ h3{
     padding:2%;
     box-shadow: 0 10px 25px rgba(255, 0, 255, 0.3);
     color: #fff;
-        backdrop-filter: blur(10px);
 
     transition: transform 0.3s ,box-shadow 0.3s;
         background-image: url(back4.jpg);
@@ -217,7 +215,6 @@ h3{
     padding:2%;
     box-shadow: 0 10px 25px rgba(255, 0, 255, 0.3);
     color: #fff;
-    backdrop-filter: blur(10px);
     transition: transform 0.3s ,box-shadow 0.3s;
         background-image: url(back4.jpg);
 
@@ -325,20 +322,8 @@ height: 50%;
     color: #333;
 }
 
-@media (max-width: 768px) {
-    .aboutpage {
-        padding: 25px;
-    }
 
-    .aboutpage h2 {
-        font-size: 24px;
-    }
 
-    .aboutpage p,
-    .aboutpage ul li {
-        font-size: 14px;
-    }
-}
 #Contact{
         background-color: #f4f6f9;
   border-radius: 40px;
@@ -438,4 +423,135 @@ height: 50%;
     opacity: 0;
     transform: translateX(120%);
   }
+}
+@media (max-width: 768px) {
+
+  /* Navigation */
+  .nav{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:15px;
+  }
+
+  .container{
+    width:95%;
+    flex-wrap:wrap;
+    gap:8px;
+    padding:10px;
+  }
+
+  .btn{
+    padding:8px 12px;
+    font-size:14px;
+  }
+
+  .outline{
+    display:none;
+  }
+
+  /* Hero */
+
+  #welcome{
+    font-size:45px;
+    text-align:center;
+    margin:40px 0 10px;
+  }
+
+  #oursite{
+    font-size:35px;
+    text-align:center;
+    margin:0 0 30px;
+  }
+
+  #join{
+    float:none;
+    display:block;
+    width:80%;
+    margin:20px auto;
+    padding:15px;
+  }
+
+  /* Products */
+
+  #home{
+    margin-top:70px;
+    border-radius:20px;
+  }
+
+.secondpage{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:stretch;
+    flex-wrap:nowrap;
+    gap:10px;
+    margin-top:0;
+    padding:20px 10px;
+}
+
+  .laptops h3,
+.phones h3,
+.Accesorries h3{
+    width:25%;
+    padding:10px;
+    height:auto;
+    font-size: 16px;
+}
+
+ #tab,
+#iphone,
+#acc{
+    width:80%;
+    height:auto;
+    margin:15px auto;
+    display:block;
+}
+
+ #lap_but,
+#ph_but,
+#acc_but{
+    width:100%;
+    height:40px;
+    font-size:14px;
+}
+
+  /* About */
+
+  #About{
+    margin-top:70px;
+    padding:30px 15px;
+  }
+
+  .aboutpage{
+    width:100%;
+    padding:25px;
+  }
+
+  /* Contact */
+
+  #Contact{
+    margin-top:70px;
+    padding:30px 15px;
+  }
+
+  .contactpage{
+    width:100%;
+    padding:25px;
+  }
+
+  .contactpage form input,
+  .contactpage form textarea{
+    width:100%;
+    box-sizing:border-box;
+  }
+
+  .feedback-toast{
+    right:10px;
+    left:10px;
+    top:15px;
+    font-size:14px;
+    text-align:center;
+  }
+
 }
