@@ -259,19 +259,124 @@ height: 550px;
 
 /* ===== VERY SMALL PHONES (under 400px) ===== */
 @media (max-width: 400px) {
-  .second,
-  .third {
-    width: 95% !important;
-    padding: 1rem !important;
+@media (max-width: 768px) {
+  
+  /* Background */
+  .Loginbody {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
   }
 
+  /* Title */
   h3 {
-    font-size: 22px !important;
+    font-size: 28px !important;
   }
 
+  /* SECOND CARD (Login) - only width and padding */
+  .second {
+    width: 60% !important;
+    height: auto !important;
+    padding: 1.5rem !important;
+    margin: 20px auto !important;
+    position: relative;
+    z-index: 2;
+    transition: all 0.6s ease;
+  }
+
+  /* THIRD CARD (Register) - only width and padding */
+  .third {
+    width: 60% !important;
+    height: auto !important;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    padding: 1.5rem !important;
+    transition: all 0.6s ease;
+  }
+
+  /* Remove hover effect on mobile */
+  .second:hover {
+    transform: none !important;
+    box-shadow: 5px 5px 50px 50px blueviolet !important;
+  }
+
+  /* Remove active transforms */
+  .second.active {
+    pointer-events: none;
+    opacity: 0 !important;
+  }
+
+  .third.active {
+    opacity: 1 !important;
+    transform: translate(0,0);
+  }
+
+  /* Inputs - full width on mobile */
+  #emaill,
+  #pass,
+  #emaill2,
+  #pass2,
+  #name2,
+  #pass3 {
+    width: 30% !important;
+    font-size: 16px !important;
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+  }
+#emaill:focus,
+#pass:focus,
+#emaill2:focus,
+#pass2:focus,
+#name2:focus,
+#pass3:focus {
+  width: 100% !important;
+  transition: width 0.3s ease;
+}
+  /* Buttons */
   #butt,
   #butt2 {
-    height: 44px !important;
+    height: 50px !important;
+    font-size: 16px !important;
+    margin-top: 20px !important;
+  }
+
+  /* hr */
+  hr {
+    width: 100% !important;
+  }
+
+  /* Text */
+  p,
+  .textt,
+  .textt2,
+  .namee,
+  .textt3 {
+    font-size: 14px !important;
+    text-align: center !important;
+  }
+
+  /* Span links */
+  #span,
+  #span2 {
     font-size: 14px !important;
   }
+
+  /* Box shadow smaller on mobile */
+  .second,
+  .third {
+    box-shadow: 5px 5px 30px 30px blueviolet !important;
+  }
+
+  /* Textt2 flex wrap */
+  .textt2 {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    white-space: normal !important;
+  }
+}
 }
