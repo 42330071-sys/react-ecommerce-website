@@ -123,7 +123,6 @@ gap: 7vw;
     margin-top: 5vh;
     margin-right: 20vw;
     font-size: 80px;
-    font-family: fantasy;
     filter: drop-shadow(10px 1px 10px blueviolet);
 }
 #oursite{
@@ -425,6 +424,7 @@ height: 50%;
   }
 }
 @media (max-width: 768px) {
+ 
 
   /* Navigation */
   .nav{
@@ -453,13 +453,13 @@ height: 50%;
   /* Hero */
 
   #welcome{
-    font-size:45px;
+    font-size:20px;
     text-align:center;
     margin:40px 0 10px;
   }
 
   #oursite{
-    font-size:35px;
+    font-size:20px;
     text-align:center;
     margin:0 0 30px;
   }
@@ -490,13 +490,13 @@ height: 50%;
     padding:20px 10px;
 }
 
-  .laptops h3,
-.phones h3,
-.Accesorries h3{
+  .laptops ,
+.phones ,
+.Accesorries{
     width:25%;
     padding:10px;
     height:auto;
-    font-size: 16px;
+    font-size: 30px;
 }
 
  #tab,
